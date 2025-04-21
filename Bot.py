@@ -4,7 +4,7 @@ import sqlite3
 import time
 import os
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("7017412513:AAGckA2FKxQtlSFSn6-XsIpIBjDISwJt2W0")
 bot = telebot.TeleBot(TOKEN)
 
 db = sqlite3.connect("trk_bot.db", check_same_thread=False)
