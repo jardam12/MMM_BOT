@@ -3,7 +3,6 @@ import sqlite3
 db = sqlite3.connect("trk_bot.db", check_same_thread=False)
 cursor = db.cursor()
 
-# Таблица пользователей
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -16,7 +15,6 @@ CREATE TABLE IF NOT EXISTS users (
 )
 """)
 
-# Инвестиции
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS investments (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -27,7 +25,6 @@ CREATE TABLE IF NOT EXISTS investments (
 )
 """)
 
-# Игры
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS games (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -39,7 +36,6 @@ CREATE TABLE IF NOT EXISTS games (
 )
 """)
 
-# Выводы
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS withdrawals (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -50,7 +46,6 @@ CREATE TABLE IF NOT EXISTS withdrawals (
 )
 """)
 
-# Рефералы
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS referrals (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
